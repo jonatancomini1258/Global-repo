@@ -1,0 +1,110 @@
+* {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Oswald', sans-serif;
+font-size: 20px;
+
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+label{
+  margin: 0px auto;
+}
+
+.registerform{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+  margin:0px auto;
+  align-items: center;
+
+  background-color: #fff;
+padding: 5px;
+box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  
+}
+
+.register-container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+
+}
+
+.register-subcontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.register-fiedset{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.register-fiedset label {
+  margin-right: 10px;
+}
+
+.register-terms{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.submit-button {
+  background-color: #026fe6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #0255b3;
+}
+
+
+.input:focus{
+  border: 3px solid rgb(106, 146, 231);
+  outline: none;
+}
+
+.register-terms{
+  display: flex;
+  flex-direction: row;
+}
+
+select{ 
+  width: 9.20rem; 
+  height: 1.7rem;
+} 
+
+#birthDate{ 
+  width: 9.20rem; 
+  height: 1.6rem;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+  justify-content: center;
+}
+
+/* Estilos para pantallas más pequeñas (móviles) */
+@media (max-width: 768px) {
+  .register-container {
+    flex-direction: column; /* Cambia a columna en dispositivos móviles */
+    gap: 10px; /* Espacio entre los inputs */
+  }
+}
